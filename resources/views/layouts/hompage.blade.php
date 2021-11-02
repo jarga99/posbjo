@@ -349,7 +349,7 @@
                                                             90,80,90,-70,61,-83,63</div>
                                                     </td>
                                                 </tr>
-                                            </tbody>
+                                            </tbody>          
                                         </table>
                                     </div>
                                     <!-- /.table-responsive -->
@@ -387,42 +387,50 @@
                                 <div class="card-body p-0">
                                     <ul class="users-list clearfix">
                                         <li>
-                                            <img src="{{ asset('AdminLTE/dist/img/user4-128x128.jpg')}}" alt="User Image">
+                                            <img src="{{ asset('AdminLTE/dist/img/user4-128x128.jpg')}}"
+                                                alt="User Image">
                                             <a class="users-list-name" href="#">Alexander Pierce</a>
                                             <span class="users-list-date">Today</span>
                                         </li>
                                         <li>
-                                            <img src="{{ asset('AdminLTE/dist/img/user7-128x128.jpg')}}" alt="User Image">
+                                            <img src="{{ asset('AdminLTE/dist/img/user7-128x128.jpg')}}"
+                                                alt="User Image">
                                             <a class="users-list-name" href="#">Norman</a>
                                             <span class="users-list-date">Yesterday</span>
                                         </li>
                                         <li>
-                                            <img src="{{ asset('AdminLTE/dist/img/user7-128x128.jpg')}}" alt="User Image">
+                                            <img src="{{ asset('AdminLTE/dist/img/user7-128x128.jpg')}}"
+                                                alt="User Image">
                                             <a class="users-list-name" href="#">Jane</a>
                                             <span class="users-list-date">12 Jan</span>
                                         </li>
                                         <li>
-                                            <img src="{{ asset('AdminLTE/dist/img/user6-128x128.jpg')}}" alt="User Image">
+                                            <img src="{{ asset('AdminLTE/dist/img/user6-128x128.jpg')}}"
+                                                alt="User Image">
                                             <a class="users-list-name" href="#">John</a>
                                             <span class="users-list-date">12 Jan</span>
                                         </li>
                                         <li>
-                                            <img src="{{ asset('AdminLTE/dist/img/user2-160x160.jpg')}}" alt="User Image">
+                                            <img src="{{ asset('AdminLTE/dist/img/user2-160x160.jpg')}}"
+                                                alt="User Image">
                                             <a class="users-list-name" href="#">Alexander</a>
                                             <span class="users-list-date">13 Jan</span>
                                         </li>
                                         <li>
-                                            <img src="{{ asset('AdminLTE/dist/img/user5-128x128.jpg')}}" alt="User Image">
+                                            <img src="{{ asset('AdminLTE/dist/img/user5-128x128.jpg')}}"
+                                                alt="User Image">
                                             <a class="users-list-name" href="#">Sarah</a>
                                             <span class="users-list-date">14 Jan</span>
                                         </li>
                                         <li>
-                                            <img src="{{ asset('AdminLTE/dist/img/user4-128x128.jpg')}}" alt="User Image">
+                                            <img src="{{ asset('AdminLTE/dist/img/user4-128x128.jpg')}}"
+                                                alt="User Image">
                                             <a class="users-list-name" href="#">Nora</a>
                                             <span class="users-list-date">15 Jan</span>
                                         </li>
                                         <li>
-                                            <img src="{{ asset('AdminLTE/dist/img/user5-128x128.jpg')}}" alt="User Image">
+                                            <img src="{{ asset('AdminLTE/dist/img/user5-128x128.jpg')}}"
+                                                alt="User Image">
                                             <a class="users-list-name" href="#">Nadia</a>
                                             <span class="users-list-date">15 Jan</span>
                                         </li>
@@ -453,14 +461,7 @@
         </aside>
         <!-- /.control-sidebar -->
 
-        <!-- Main Footer -->
-        <footer class="main-footer">
-            <strong>Copyright By Mr.Jrx</strong>
-            All rights reserved.
-            <div class="float-right d-none d-sm-inline-block">
-                <b>Version</b> 0.1
-            </div>
-        </footer>
+
     </div>
     <!-- ./wrapper -->
 
