@@ -92,7 +92,7 @@
             <a href="{{asset('pages/widgets.html')}}" class="nav-link">
               <i class="nav-icon fas fa-cash-register"></i>
               <p>
-                ORDER
+                Order
                 <span class="badge badge-success right">New</span>
               </p>
             </a>
@@ -101,7 +101,7 @@
             <a href="{{asset('pages/widgets.html')}}" class="nav-link">
               <i class="nav-icon fas fa-tasks"></i>
               <p>
-                ORDER HISTORY 
+                Order History 
                 <span class="badge badge-primary right">Record</span>
               </p>
             </a>
