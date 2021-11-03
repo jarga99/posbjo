@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\CategoryController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -18,3 +19,9 @@ Route::get('/', fn () => redirect()->route('login'));
 Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
     return view('homeapp');
 })->name('dashboard');
+
+
+Route::group(['middleware' => 'auth'],function () {
+    Route::get('/category/data', [CategoryController::class, 'data']);
+    Route::resource('/category',CategoryController::class);
+});

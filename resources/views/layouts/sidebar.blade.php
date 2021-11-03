@@ -32,7 +32,7 @@
             <li class="nav-header">Store Master</li>
           </li>
           <li class="nav-item">
-            <a href="{{asset('pages/widgets.html')}}" class="nav-link">
+            <a href="{{ route ('category.index')}}" class="nav-link">
               <i class="nav-icon fas fa-th-list"></i>
               <p>
                 Category
