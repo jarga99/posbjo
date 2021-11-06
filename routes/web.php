@@ -22,6 +22,6 @@ Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
 
 
 Route::group(['middleware' => 'auth'],function () {
-    Route::get('/category/data', [CategoryController::class, 'data']);
+    Route::get('/category/data', [CategoryController::class, 'data'])->name('category.data');
     Route::resource('/category',CategoryController::class);
 });
