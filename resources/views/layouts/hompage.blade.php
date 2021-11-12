@@ -5,6 +5,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>{{config ('app.name')}} | @yield('title')</title>
+    <meta name="csrf-token" content="{{ csrf_token() }}">
 
     <!-- Google Font: Source Sans Pro -->
     <link rel="stylesheet"
@@ -51,7 +52,7 @@
                             <ol class="breadcrumb float-sm-right">
 
                                 @section('breadcrumb')
-                                <li class="breadcrumb-item"><a href="{{url ('/')}}">Home</a></li>
+                                <li class="breadcrumb-item"><a href="{{url ('/')}}">Home/ </a> </li>
                                 @show
 
                             </ol>
@@ -96,6 +97,7 @@
     <script src="{{ asset ('AdminLTE/plugins/datatables-buttons/js/buttons.html5.min.js')}}"></script>
     <script src="{{ asset ('AdminLTE/plugins/datatables-buttons/js/buttons.print.min.js')}}"></script>
     <script src="{{ asset ('AdminLTE/plugins/datatables-buttons/js/buttons.colVis.min.js')}}"></script>
+    
     <script src="{{ asset ('AdminLTE/plugins/bootstrap/js/bootstrap.bundle.min.js')}}"></script>
     <!-- overlayScrollbars -->
     <script src="{{ asset ('AdminLTE/plugins/overlayScrollbars/js/jquery.overlayScrollbars.min.js')}}"></script>
@@ -113,6 +115,8 @@
     <script src="{{ asset ('AdminLTE/dist/js/demo.js')}}"></script>
     <!-- AdminLTE dashboard demo (This is only for demo purposes) -->
     <script src="{{ asset ('AdminLTE/dist/js/pages/dashboard2.js')}}"></script>
+    <!-- Validator -->
+    <script src="{{ asset('js/validator.min.js') }}"></script>
     
     @stack('scripts')
 </body>

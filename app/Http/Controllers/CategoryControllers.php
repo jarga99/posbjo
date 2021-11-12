@@ -17,25 +17,6 @@ class CategoryController extends Controller
         return view('category.index');
     }
 
-    public function data()
-    {
-        $category = Category::orderBy('id_category', 'desc')->get();
-
-        return datatables()
-            ->of($category)
-            ->addIndexColumn()
-            ->addColumn('aksi', function ($category) {
-                return '
-                <div class="btn">
-                    <button onclick="editForm(`'. route('category.update', $category->id_category) .'`)" class="btn btn-xs btn-warning"><i class="fas fa-edit"></i></button>
-                    <button onclick="deleteData(`'. route('category.destroy', $category->id_category) .'`)" class="btn btn-xs btn-danger"><i class="fas fa-trash"></i></button>
-                </div>
-                ';
-            })
-            ->rawColumns(['aksi'])
-            ->make(true);
-    }
-
     /**
      * Show the form for creating a new resource.
      *
@@ -54,11 +35,7 @@ class CategoryController extends Controller
      */
     public function store(Request $request)
     {
-        $category = new Category();
-        $category->name_category = $request->name_category;
-        $category->save();
-
-        return response()->json('Data berhasil disimpan', 200);
+        //
     }
 
     /**
@@ -69,9 +46,7 @@ class CategoryController extends Controller
      */
     public function show($id)
     {
-        $category = Category::find($id);
-
-        return response()->json($category);
+        //
     }
 
     /**
@@ -94,11 +69,7 @@ class CategoryController extends Controller
      */
     public function update(Request $request, $id)
     {
-        $category = Category::find($id);
-        $category->name_category = $request->name_category;
-        $category->update();
-
-        return response()->json('Data berhasil disimpan', 200);
+        //
     }
 
     /**
@@ -109,9 +80,6 @@ class CategoryController extends Controller
      */
     public function destroy($id)
     {
-        $category = Category::find($id);
-        $category->delete();
-
-        return response(null, 204);
+        //
     }
 }
