@@ -29,7 +29,7 @@
                 Dashboard
               </p>
             </a>
-            <li class="nav-header">Store Master</li>
+            <li class="nav-header">CATALOG</li>
           </li>
           <li class="nav-item">
             <a href="{{ route ('category.index')}}" class="nav-link">
