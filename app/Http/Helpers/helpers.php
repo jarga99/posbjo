@@ -55,7 +55,7 @@ function date_indo ($dte, $display_day = true)
     return $text;
 }
 
-function tambah_nol_didepan($value, $threshold = null)
+function zero_on_front($value, $threshold = null)
 {
     return sprintf("%0". $threshold . "s", $value);
 }
